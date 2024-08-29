@@ -1,0 +1,32 @@
+Step 1 : dataset downloaded 
+Step 2 : environment set – jupyter notebook , tensorflow-keras, pytorch(torchvision)
+Step 3: split the dataset in test and train data 
+Step 4: perform data augmentation (at least on 10 images ) with reasoning
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+1. Cleaning the raw dataset for duplicate values:
+	a. Load the raw dataset into memory.
+	b. Identify and remove any duplicate entries based on unique identifiers or data properties.
+2. Creating test and train data directories split:
+	a. Divide the dataset into a training set and a testing set.
+	b. Create separate directories for the training and testing data.
+3. Data augmentation:
+	a. Apply various data augmentation techniques to increase the diversity and size of the training dataset.
+b.	Common augmentation techniques include rotation, scaling, flipping, and cropping of images.
+4.	Adding hyperparameters:
+a.	Determine the hyperparameters for your CNN model.
+b.	Hyperparameters include learning rate, batch size, number of epochs, and regularization parameters.
+5.	Feature extractor (e.g., ResNet):
+a.	Choose a pre-trained deep learning model as a feature extractor.
+b.	ResNet is a popular choice due to its excellent performance on image classification tasks.
+c.	Load the pre-trained ResNet model and remove the fully connected layers.
+6.	Model building:
+a.	Add additional layers to the feature extractor to create the classification head.
+b.	These layers are responsible for learning the specific features of your image classification task.
+c.	Connect the modified ResNet feature extractor with the classification head.
+7.	Saving and loading the model:
+a.	Save the trained model weights and architecture to disk. This allows you to load and use the trained model later without retraining.
+8.	Predicting the test image class:
+a.	Load the saved model.
+b.	Preprocess the test image by resizing, normalizing, and formatting it according to the model's input requirements.
+c.	Pass the preprocessed image through the model and obtain the predicted class probabilities or labels.

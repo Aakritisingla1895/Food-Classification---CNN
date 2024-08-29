@@ -1,0 +1,10 @@
+1. download the dataset - take backup of the zip file 
+2. clean the dataset for missing labels
+Displaying the images
+3. data split into test and train data folders
+4. Data preprocessing and augmentation 
+	20 % of train data for validation
+5. Hyperparameter tuning
+6. define the random 25 classes out of 101 from the given dataset to work upon
+7. Plot Exploratory Data Analysis on the extracted classes from the given dataset
+8. 
